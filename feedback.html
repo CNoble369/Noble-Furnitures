@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#rcorners1 {
+    border-radius: 25px;
+    background: lightgreen;
+    padding: 20px; 
+    width: 400px;
+    height: 400px;    
+}
+h2.four {border:10px inset aqua;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #DC143C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #E9967A;
+}
+
+li a.active {
+    color: white;
+    background-color: hotpink;
+}
+    .row {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .column::after {
+        content: "";
+        clear: both;
+        display: table;
+	
+div {
+    background-color: purple;
+    border: 1px solid;
+    padding: 50px;
+}
+
+form {text-align:left}
+</style>
+</head>
+<body style="background-color:skyblue">
+<h1 style="color:purple;text-align:center; ">Noble Furnitures</h1>
+<br>
+<ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+	<li><a href="category.html">Category</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a class="active" href="#feedback">Feedback</a></li>	
+    </ul>
+<h2 class="four" style="text-align:center; font-family:verdana">Feedback Form</h2>
+<center><form id="rcorners1" style="text-align:left">
+How was your experience?
+<br>
+  <input type="radio" name="a" value="Extreamely Happy" >Extreamely Happy
+  <br>
+  <input type="radio" name="a" value="Very Happy" >Very Happy
+<br>
+  <input type="radio" name="a" value="Happy" >Happy
+  <br>
+  <input type="radio" name="a" value="Not Bad">Not Bad
+<br>
+<br>
+Quality of Products?
+<br>
+  <input type="radio" name="b" value="Excellent" >Excellent
+  <br>
+  <input type="radio" name="b" value="Very good" >Very Good
+<br>
+  <input type="radio" name="b" value="Good" >Good
+  <br>
+  <input type="radio" name="b" value="poor">Poor
+<br>
+<br>
+Quality of Service?
+<br>
+  <input type="radio" name="c" value="Excellent" >Excellent
+  <br>
+  <input type="radio" name="c" value="Very Good" >Very Good
+<br>
+  <input type="radio" name="c" value="Good" >Good
+  <br>
+  <input type="radio" name="c" value="Not Bad" >Not Bad
+<br>
+<br>
+Overall rating of the Shop
+<br>
+<input type="radio" name="d" value="5" >5
+
+  <input type="radio" name="d" value="4" >4
+
+  <input type="radio" name="d" value="3" >3
+  
+  <input type="radio" name="d" value="2" >2
+
+<input type="radio" name="d" value="1" >1
+
+<br>
+<br>
+<br>
+<br>
+
+<br>Give us any suggestions regarding products and services
+<br>
+<textarea type="message" rows="6" cols="50"></textarea>
+<input type="submit" value="Submit" style="background-color:purple; color:yellow">
+<button type="button" onclick="alert('your feedback has been submitted')">try it</button>
+</form></center>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

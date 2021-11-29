@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        h1 {color: purple;}
+        .nav {margin: 0px; padding: 0px;}
+
+        .nav ul li {display: inline;}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+img {height:300; width:600px}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #DC143C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #E9967A;
+}
+
+li a.active {
+    color: white;
+    background-color: hotpink;
+}
+    .row {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .column::after {
+        content: "";
+        clear: both;
+        display: table;
+	
+div {
+    background-color: purple;
+    border: 1px solid;
+    padding: 50px;
+}
+    }
+	p.four {border:10px inset aqua;}
+	p.five {border:10px ridge pink;}
+	p.six {border:10px ridge yellow;} 
+</style>
+    <title>Home Page</title>
+</head>
+<body style="background-image: url('images/backimg.jpg'); color:blue ">
+    <center><h1>Noble Furnitures</h1></center>
+    <br>
+    
+    <!----- <div class="nav">
+        <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </div> !----->
+	<ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+	
+	<li><a href="category.html">Category</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="feedback.html">Feedback</a></li>	
+    </ul>
+    <br>
+	<p style="font-size:1.5em">Input price for an item and click the button:</p>
+
+<input id="price">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="price"
+    x = document.getElementById("price").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x)){
+        text = "Input is not valid";
+    } else if(x < 500 || x > 100000) {
+        text = "Items are not available";
+    } else {
+text = "Items are available";
+}
+    document.getElementById("demo").innerHTML = text;
+
+}
+</script>
+
+    <br>
+	<br>
+    <strong><p class="four" style="text-align:center; font-size:2em">We are famous for</p></strong>
+    <strong><p class="five" style="text-align:center; font-size:1.5em;">Teak wood furnitures</p></strong>
+   
+   <strong> <p class="five" style="text-align:center; font-size:1.5em;">Sandlewood furnitures</p></strong>
+   
+    <strong><p class="six" style="text-align:center; font-size:1.5em;">Furnitures with reasonable price</p></strong>
+    <strong><p class="six" style="text-align:center; font-size:1.5em;">Big festival offers</p></strong>
+    <br>
+    
+	<div id="myDiv">
+<p style="background-color: purple; text-align:center; font-size:1.5em; color:white;
+    border: 3px solid;
+    padding: 50px;" id="myP">Click here to get Special offers!</p>
+</div><br>
+
+<script>
+document.getElementById("myP").addEventListener("click", function() {
+    alert("Getting offers! just a minute!");
+}, false);
+
+document.getElementById("myDiv").addEventListener("click", function() {
+    alert("Hurray!,Special offers starting from 1000rs, get now");
+}, false);
+</script>
+
+    
+
+</body>
+</html>
